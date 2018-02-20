@@ -4,7 +4,7 @@
  * calculadora para calcular una operación de un archivo de texto en formato
  * PostFix.
  *
- * @author Jose Tejada
+ * @author Rodrigo Morales
  * @author Javier Anleu
  * @version 1.0
  */
