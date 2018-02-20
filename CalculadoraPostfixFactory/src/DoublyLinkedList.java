@@ -1,5 +1,14 @@
 import java.util.Iterator;
 
+/**
+ * Es la clase que se utiliza para listas de nodos dobles. Está basada en lo
+ * descrito en Java Structures de Duane Bailey
+ * 
+ * @author Javier Anleu - 17149
+ *
+ * @param <E>
+ *            tipo genérico
+ */
 public class DoublyLinkedList<E> extends AbstractList<E> {
 	protected int count;
 	protected DoublyLinkedNode<E> head;
@@ -78,9 +87,9 @@ public class DoublyLinkedList<E> extends AbstractList<E> {
 	}
 
 	/**
-	 * Metodo que devuelve el tamano de la lista
+	 * Método que devuelve el tamaño de la lista
 	 * 
-	 * @return Tamano de la lista
+	 * @return Tamaño de la lista
 	 */
 	@Override
 	public int size() {

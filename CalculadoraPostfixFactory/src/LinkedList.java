@@ -1,5 +1,14 @@
 import java.util.Iterator;
 
+/**
+ * Clase para listas de un nodo. Basada en lo descrito en Java Structures por
+ * Duane Bailey
+ * 
+ * @author Javier Anleu - 17149
+ *
+ * @param <E>
+ *            tipo genérico
+ */
 public class LinkedList<E> extends AbstractList<E> {
 
 	protected int count; // list size

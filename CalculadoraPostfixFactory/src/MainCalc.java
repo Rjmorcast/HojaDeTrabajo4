@@ -7,8 +7,7 @@ import java.util.Scanner;
 
 /**
  * Es el principal del programa.
- * 
- * @author Jose Tejada
+
  * @author Javier Anleu
  * @version 1.0
  * @since January 26, 2018

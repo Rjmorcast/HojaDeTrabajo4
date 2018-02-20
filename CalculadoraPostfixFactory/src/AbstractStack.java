@@ -1,4 +1,13 @@
-
+/**
+ * Clase abstracta para los stacks. Basada en el diseño de factory de Design
+ * Patterns de James Cooper
+ * 
+ * @author Javier Anleu - 17149
+ * 
+ *
+ * @param <E>
+ *            de tipo genérico
+ */
 public abstract class AbstractStack<E> implements Stack<E> {
 	/**
 	 * Metodo que inserta un elemento al stack
@@ -10,7 +19,7 @@ public abstract class AbstractStack<E> implements Stack<E> {
 	public abstract void push(E item);
 
 	/**
-	 * Metodo que elimina un elemento del stack
+	 * Método que elimina un elemento del stack
 	 * 
 	 * @return El elemento eliminado
 	 */
@@ -18,7 +27,7 @@ public abstract class AbstractStack<E> implements Stack<E> {
 	public abstract E pop();
 
 	/**
-	 * Metodo que permite visualizar el primer elemento del stack
+	 * Método que permite visualizar el primer elemento del stack
 	 * 
 	 * @return Primer elemento del stack
 	 */
@@ -26,7 +35,7 @@ public abstract class AbstractStack<E> implements Stack<E> {
 	public abstract E peek();
 
 	/**
-	 * Metodo que regresa el tamano del stack
+	 * Método que regresa el tamano del stack
 	 * 
 	 * @return Tamano del Stack
 	 */
@@ -34,7 +43,7 @@ public abstract class AbstractStack<E> implements Stack<E> {
 	public abstract int size();
 
 	/**
-	 * Metodo que devuelve si esta vacio el stack
+	 * Método que devuelve si esta vacio el stack
 	 * 
 	 * @return Verdadero si esta vacio
 	 */

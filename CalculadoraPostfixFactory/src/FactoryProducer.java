@@ -1,4 +1,11 @@
 
+/**
+ * Clase que se encarga de devolver los factories según sea solicitado. Basado
+ * en lo descrito en Design Patterns de James Cooper
+ * 
+ * @author Javier Anleu - 17149
+ *
+ */
 public class FactoryProducer {
 	public static final String STACK = "STACK";
 	public static final String LIST = "LIST";

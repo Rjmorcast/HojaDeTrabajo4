@@ -1,3 +1,12 @@
+/**
+ * Es la clase para los stacks que se desea comporten de manera circular. Está
+ * basada en lo descrito en Java Structures por Duane Bailey
+ * 
+ * @author Javier Anleu - 17149
+ *
+ * @param <E>
+ *            tipo genérico
+ */
 
 public class StackCircular<E> extends AbstractStack<E> {
 	private CircularLinkedList<E> stack;

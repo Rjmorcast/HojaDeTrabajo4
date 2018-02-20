@@ -1,3 +1,12 @@
+/**
+ * Clase abstracta para la formación de listas. Basada en el diseño de factory
+ * presentado en Design Patterns de James Cooper
+ * 
+ * @author Javier Anleu - 17149
+ *
+ * @param <E>
+ *            de tipo genérico
+ */
 public abstract class AbstractList<E> implements List<E> {
 
 	/**

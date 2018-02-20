@@ -1,5 +1,14 @@
 import java.util.Iterator;
 
+/**
+ * Es una clase para listas encadenadas circulares. Está basada en lo descrito
+ * por Java Structures de Duane Bailey
+ * 
+ * @author Javier Anleu - 17149
+ *
+ * @param <E>
+ *            tipo genérico
+ */
 public class CircularLinkedList<E> extends AbstractList<E> {
 	protected Node<E> tail;
 	protected int count;
@@ -23,9 +32,9 @@ public class CircularLinkedList<E> extends AbstractList<E> {
 	}
 
 	/**
-	 * Remueve el primer elemento de la lista
+	 * Elimina el primer elemento de la lista
 	 * 
-	 * @return Elemento que se remueve
+	 * @return Elemento que se elimina
 	 */
 	@Override
 	public E removeFirst() {

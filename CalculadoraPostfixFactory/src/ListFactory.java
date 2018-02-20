@@ -1,4 +1,13 @@
-
+/**
+ * Factory para las listas. A partir de ella se obtienen las instancias de las
+ * listas simples, dobles y circulares. Basada en lo descrito en Design Patterns
+ * de James Cooper.
+ * 
+ * @author Javier Anleu - 17149
+ *
+ * @param <E>
+ *            tipo genérico
+ */
 public class ListFactory<E> extends abstractFactory<E> {
 
 	public static final String LINKED = "LINKED";

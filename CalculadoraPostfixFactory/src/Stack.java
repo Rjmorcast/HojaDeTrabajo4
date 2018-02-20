@@ -1,4 +1,12 @@
-
+/**
+ * Es la interfaz para los Stacks. Basada en lo descrito en Java Structures por
+ * Duane Bailey
+ * 
+ * @author Javier Anleu - 17149
+ *
+ * @param <E>
+ *            tipo genérico
+ */
 public interface Stack<E> {
 	public void push(E item);
 	// pre:

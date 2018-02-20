@@ -1,4 +1,12 @@
 
+/**
+ * Es la clase para stacks doblemente encadenados. Basada en lo descrito en Java
+ * Structures de Duane Bailey
+ * 
+ * @author Javier Anleu - 17149
+ *
+ * @param <E>
+ */
 public class StackDoubly<E> extends AbstractStack<E> {
 	private DoublyLinkedList<E> stack;
 
@@ -10,7 +18,7 @@ public class StackDoubly<E> extends AbstractStack<E> {
 	}
 
 	/**
-	 * push: anade un elemento a la lista doblemente encadenada.
+	 * push: Añade un elemento a la lista doblemente encadenada.
 	 */
 	@Override
 	public void push(E item) {
@@ -18,7 +26,7 @@ public class StackDoubly<E> extends AbstractStack<E> {
 	}
 
 	/**
-	 * pop: devuelve el primer elemento en la lista doblemente encadenada y lo
+	 * pop: devuelve el primer elemento de la lista doblemente encadenada y lo
 	 * elimina de la lista.
 	 */
 	@Override
@@ -27,7 +35,7 @@ public class StackDoubly<E> extends AbstractStack<E> {
 	}
 
 	/**
-	 * peek: devuelve el primer elemeto de la lista doblemente encadenada.
+	 * peek: devuelve el primer elemento de la lista doblemente encadenada.
 	 */
 	@Override
 	public E peek() {
@@ -35,7 +43,7 @@ public class StackDoubly<E> extends AbstractStack<E> {
 	}
 
 	/**
-	 * size: devuelve el tamano de la lista doblemente encadenada.
+	 * size: devuelve el tamaño de la lista doblemente encadenada.
 	 */
 	@Override
 	public int size() {

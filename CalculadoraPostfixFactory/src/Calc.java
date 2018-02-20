@@ -1,11 +1,9 @@
 /**
- * Esta es la clase que actúa como el controlador. Tiene elementos de
- * StackArrayList y se encarga de implementar sus métodos y los de la interfaz
- * calculadora para calcular una operación de un archivo de texto en formato
- * PostFix.
- *
- * @author Jose Tejada
- * @author Javier Anleu
+ * Esta es la clase que actúa como el controlador. Puede utilizar como
+ * estructura de Datos un tipo de stack o lista, e implementa la interfaz
+ * calculadora para realizar la operación
+ * 
+ * @author Javier Anleu - 17149
  * @version 1.0
  */
 public class Calc implements calculadora {
@@ -13,7 +11,8 @@ public class Calc implements calculadora {
 	/**
 	 * ArrayList que se utiliza para calcular las operaciones
 	 */
-	private List<String> miStack;
+	private Stack<String> miStack;
+	private List<String> miLista;
 
 	/**
 	 * Constructor de la clase

@@ -2,7 +2,6 @@
  * Esta interfaz es la que tiene el método operar para obtener el resultado del
  * archivo de texto.
  * 
- * @author Jose Tejada
  * @author Javier Anleu
  * @version 1.0 fecha=26-1-18
  */

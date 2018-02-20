@@ -1,5 +1,14 @@
 import java.util.Vector;
 
+/**
+ * Es la clase para StackVectors. Basada en lo descrito en Java Structures por
+ * Duane Bailey
+ * 
+ * @author Javier Anleu - 17149
+ *
+ * @param <E>
+ *            tipo genérico
+ */
 public class StackVector<E> implements Stack<E> {
 	protected Vector<E> arreglo;
 	public int sp;

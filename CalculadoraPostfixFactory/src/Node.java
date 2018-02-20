@@ -1,3 +1,12 @@
+/**
+ * Es la clase para los nodos simples a ser implementados en las listas. Está
+ * basada en lo descrito en Java Structures de Duane Bailey
+ * 
+ * @author Javier Anleu - 17149
+ *
+ * @param <E>
+ *            tipo genérico
+ */
 public class Node<E> {
 	protected E data; // value stored in this element
 	protected Node<E> nextElement; // ref to next

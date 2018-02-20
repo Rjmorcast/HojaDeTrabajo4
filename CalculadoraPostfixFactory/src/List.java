@@ -1,5 +1,14 @@
 import java.util.Iterator;
 
+/**
+ * Interfaz para las listas. Basada en lo descrito por Java Structures de Duane
+ * Bailey
+ * 
+ * @author Javier Anleu - 17149
+ *
+ * @param <E>
+ *            tipo genérico
+ */
 public interface List<E> {
 
 	/**

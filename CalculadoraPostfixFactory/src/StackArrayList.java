@@ -1,5 +1,14 @@
 import java.util.ArrayList;
 
+/**
+ * Es la clase de StackArrayList. Está basada en lo descrito en Java Structures
+ * por Duane Bailey
+ * 
+ * @author Javier Anleu - 17149
+ *
+ * @param <E>
+ *            tipo genérico
+ */
 public class StackArrayList<E> implements Stack<E> {
 	protected ArrayList<E> data;
 
