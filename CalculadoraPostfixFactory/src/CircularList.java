@@ -2,157 +2,170 @@ import java.util.Iterator;
 
 public class CircularList<E> extends AbstractList<E> {
 
-	protected Node<E> tail;
-	protected int count;
+    protected Node<E> tail;
+    protected int count;
 
-	public CircularList()
-	// pre: constructs a new circular list
-	{
-		tail = null;
-		count = 0;
-	}
+    /**
+     * Inserta un elemento a la lista.
+     * @param value Elemento a insertar.
+     */
+    @Override
+    public void addFirst(E value) {
+        Node<E> temp = new Node<E>(value);
+        if(tail == null){
+            tail = temp;
+        }else{
+            temp.setNext(tail.next());
+            tail.setNext(temp);
+        }
+        count++;
+    }
 
-	public void addFirst(E value)
-	// pre: value non-null
-	// post: adds element to head of list
-	{
-		Node<E> temp = new Node<E>(value);
-		if (tail == null) { // first value added
-			tail = temp;
-			tail.setNext(tail);
-		} else { // element exists in list
-			temp.setNext(tail.next());
-			tail.setNext(temp);
-		}
-		count++;
-	}
+    /**
+     * Remueve el primer elemento de la lista
+     * @return Elemento que se remueve
+     */
+    @Override
+    public E removeFirst() {
 
-	public void addLast(E value)
-	// pre: value non-null
-	// post: adds element to tail of list
-	{
-		// new entry:
-		addFirst(value);
-		tail = tail.next();
-	}
+        E valor = null;
+        if (size() > 0){
+            Node<E> head = tail.next();
+            if (head != null){
+                tail.setNext(head.next());
+                valor = head.data;
+            }else {
+                valor = tail.data;
+                tail = null;
+            }
+        }else return null;
+        count--;
+        return valor;
+    }
 
-	// lo dificil es quitar el elemento de la cola
+    /**
+     * @see List
+     */
+    @Override
+    public int size() {
+        return count;
+    }
 
-	public E removeLast()
-	// pre: !isEmpty()
-	// post: returns and removes value from tail of list
-	{
-		Node<E> finger = tail;
-		while (finger.next() != tail) {
-			finger = finger.next();
-		}
-		// finger now points to second-to-last value
-		Node<E> temp = tail;
-		if (finger == tail) {
-			tail = null;
-		} else {
-			finger.setNext(tail.next());
-			tail = finger;
-		}
-		count--;
-		return temp.value();
-	}
+    /**
+     * @see List
+     */
+    @Override
+    public void clear() {
 
-	@Override
-	public int size() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+    }
 
-	@Override
-	public void clear() {
-		// TODO Auto-generated method stub
-		
-	}
+    /**
+     * @see List
+     */
+    @Override
+    public void addLast(E value) {
 
-	@Override
-	public E getFirst() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    }
 
-	@Override
-	public E getLast() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    /**
+     * @see List
+     */
+    @Override
+    public E getFirst() {
+        return null;
+    }
+    /**
+     * @see List
+     */
+    @Override
+    public E getLast() {
+        return null;
+    }
 
-	@Override
-	public E removeFirst() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    /**
+     * @see List
+     */
+    @Override
+    public E removeLast() {
+        return null;
+    }
+    /**
+     * @see List
+     */
+    @Override
+    public E remove(E value) {
+        return null;
+    }
+    /**
+     * @see List
+     */
+    @Override
+    public void add(E value) {
 
-	@Override
-	public E remove(E value) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    }
+    /**
+     * @see List
+     */
+    @Override
+    public E remove() {
+        return null;
+    }
+    /**
+     * @see List
+     */
+    @Override
+    public E get() {
+        return null;
+    }
+    /**
+     * @see List
+     */
+    @Override
+    public int indexOf(E value) {
+        return 0;
+    }
+    /**
+     * @see List
+     */
+    @Override
+    public int lastIndexOf(E value) {
+        return 0;
+    }
+    /**
+     * @see List
+     */
+    @Override
+    public E get(int i) {
+        return null;
+    }
+    /**
+     * @see List
+     */
+    @Override
+    public E set(int i, E o) {
+        return null;
+    }
+    /**
+     * @see List
+     */
+    @Override
+    public void add(int i, E o) {
 
-	@Override
-	public void add(E value) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public E remove() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public E get() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public int indexOf(E value) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public int lastIndexOf(E value) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public E get(int i) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public E set(int i, E o) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void add(int i, E o) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public E remove(int i) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Iterator<E> iterator() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    }
+    /**
+     * @see List
+     */
+    @Override
+    public E remove(int i) {
+        return null;
+    }
+    /**
+     * @see List
+     */
+    @Override
+    public Iterator<E> iterator() {
+        return null;
+    }
 
 	@Override
 	public void push(E item) {
@@ -177,4 +190,6 @@ public class CircularList<E> extends AbstractList<E> {
 		// TODO Auto-generated method stub
 		return false;
 	}
+
+
 }
